@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--链接到外部样式表-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--这部分不懂
+    <style type="text/css">
+        body {background-color:red}
+        p {margin=left:5px}
+    </style>
+    -->
+    <meta charset="UTF-8">
+    <title>Largerthanlife</title>
+</head>
+
+<!-- style是标准用法 有些背景图片不能用 原因未知 -->
+
+<body style="background-color:white; background-image:url(Background.jpg)">
+    <h1 style="text-align:center"> Largerthanlife</h1>
+    <address>
+    Written by Patrick<br/>
+    From NJU, China
+    <a name="address" style="text-decoration:none" href="http://github.com/largerthanlife">Visit my Github</a>
+    <a style="text-decoration:none" href="http://github.com/largerthanlife">
+        <img border="0" src="city.jpg" width="20" height="20"></a>
+</address>
+
+    <div>
+        <br/>
+        <br/>
+        <hr/>
+        <p style="font-family:arial; color: gray; font-size:10px;"></p>
+        <h2>Miss Li</h2>
+        <b>She's a lovely girl</b>
+        <br/>
+    </div>
+
+    <!-- alt属性用来为图像定义一串预备的可替换的文本,align指定位置(left right bottom center等)-->
+    <!-- ismap 的用法还要进一步研究-->
+    <div>
+        <img src="MissLi.jpg" ismap width="135" height="200" alt="图片无法加载 您没眼福了" align="bottom" usemap="#Li">
+        <map name="Li" id="Li">
+    <area shape="circle" coords="35,65,3" href="city.jpg" target="_blank"/>
+    </map>
+
+        <img src="MissLi1.jpg" width="110" height="200" align="bottom" usemap="#Li1" ismap>
+        <map name="Li1" id="Li1">
+    <area shape="circle" coords="42,105,5" href="city.jpg" target="_blank"/>
+    </map>
+
+        <img src="MissLi2.jpg" ismap width="120" height="200" align="bottom" usemap="#Li2">
+        <map name="Li2" id="Li2">
+    <area shape="circle" coords="30,100,4" href="city.jpg" target="_blank"/>
+    </map>
+        <hr/>
+    </div>
+
+    <!--按钮-->
+    <div>
+        <button>This is a cute button</button>
+    </div>
+
+    <!--q blockquote 表示引用， dfn 表示定义 -->
+    <div>
+        <p>Quote：</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            <b> <i>Less is more</i></b>。
+        </blockquote>
+        <p><dfn title="World Health Organization">FAT</dfn> is your biggest worry。</p>
+    </div>
+
+    <!-- samp 定义计算机输出-->
+    <div>
+        <p>
+            <samp>
+            demo.example.com login: Apr 12 09:10:17
+            Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+        </samp>
+        </p>
+    </div>
+
+    <!--代码段-->
+    <!--
+<br/>
+<code>
+    printf("Hello,HTML!\n");
+</code>
+<br/>
+-->
+
+    <!--变量段-->
+    <div>
+        <p>
+            <var>
+            DUET = 993
+        </var>
+        </p>
+    </div>
+
+    <!-- 条件注释-->
+    <!--[if IE 8]>
+    .... some HTML here ....
+<![endif]-->
+
+    <!--表格-->
+    <div>
+        <p>
+            <!--
+    cellpadding表示单元格内容与边框的空白
+    cellspacing表示单元格之间的空白
+    bgcolor背景颜色(table或td里)
+    background背景图
+    align放在th里表示单元格内容在单元格的不同位置
+    frame
+    -->
+            <table border="2" cellpadding="10" cellspacing="10" bgcolor="red" frame="above">
+                <caption>The piano bro
+
+                </caption>
+                <tr>
+                    <th bgcolor="blue" align="left">Heading</th>
+                    <th colspan="2" bgcolor="grenn" align="right">case</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">choice</th>
+                    <td>love</td>
+                    <td>last</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>faith</td>
+                </tr>
+            </table>
+    </div>
+
+    <!--列表-->
+    <div>
+        <!--列表内部可以使用段落、换行符、图片、链接以及其他列表-->
+        <p>
+            <!--无序列表-->
+            <ul>
+                <li>Li</li>
+                <li>lin</li>
+                <li>lin</li>
+            </ul>
+            <!--有序列表-->
+            <ol>
+                <li>腿</li>
+                <li>很</li>
+                <li>长</li>
+            </ol>
+            <!--自定义列表-->
+            <dl>
+                <dt>Chandler</dt>
+                <dd>put a photo here</dd>
+                <dt>彭于晏</dt>
+                <dd>放一张照片啦</dd>
+            </dl>
+        </p>
+    </div>
+
+    <!--分类行级元素-->
+    <div>
+        <style>
+            span.Li {
+                color: gray
+            }
+
+        </style>
+
+        This is a simple page that i made, Miss <span class="Li">Li</span>
+    </div>
+
+    <!--分类块级元素-->
+    <div>
+        <style>
+            .block {
+                background-color: gray;
+                color: black;
+                margin: 10px;
+                padding: 10px;
+            }
+
+        </style>
+
+        <div class="block">
+            <h3>class in HTML</h3>
+            This "class" is something like "template" in C++ define a class start with ".classname" and put it in the style block in head the using it like div class="classname"
+        </div>
+    </div>
+
+
+    <a href="#address">这是一个命名锚</a>
+
+</body>
+
+</html>
